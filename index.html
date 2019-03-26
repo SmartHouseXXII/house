@@ -16,47 +16,31 @@
 
     	<style>
 
-    	.text {
+      div.container4 {
+        position: relative }
+      div.container4 div {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
 
-    		color: white;
+    	.text {
+    		color: #191970;
     		font-family: Arial Black, Verdana, Arial, Helvetica, sans-serif; 
     		font-size: 20px;
+        line-height: 1.2;
     	}
-.pic {
-  float: left;
-  margin: 0px;
-  position: relative;
-  width: 100%;
-}
-.pic:after {
-    content: ' ';
-  background-color: #000;
-  height: 100%;
-  left: 0;
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
-  -ms-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-  width: 100%;
-}
-.pic:hover:after {
-  opacity: 0;
-}
 
-.img-wrap {
-  position: relative;
-}
+      .d {
+         height: 600px; /* Высота блока */
+         width: 100%; /* Ширина блока */
+         background-blend-mode: darken;
+         background: url(img/houme1.jpg) repeat-y rgba(0,0,0,.7); 
 
-.img-wrap h1 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
+   }
+
     	</style>
         <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -81,18 +65,8 @@
                     <h4>Комнаты</h4>
                     <ul>
                       <li><a href="s_lecture-hall.html">Зал</a></li>
-                      <li><a href="#">Кухня</a></li>
-                      <li><a href="#">Коридор</a></li>
                       <li><a href="#">Спальня</a></li>
-                      <li><a href="#">Прихожая</a></li>
-                    </ul>
-                    <h4>Администратор</h4>
-                    <ul>
-                      <li><a href="a_upravlenie_pitaniem.html">Микросхемы управления питания </a></li>
-                      <li><a href="#">Дискретные полупроводниковые устройства</a></li>
-                      <li><a href="#">Микроконтроллеры для смарт-карт</a></li>
-                      <li><a href="#">RFID-продукция</a></li>
-                      <li><a href="#">Радиоконтроллеры</a></li>
+
                     </ul>
                   </div>
                 </div>
@@ -103,7 +77,7 @@
               <div class="mainmenu-submenu">
                 <div class="mainmenu-submenu-inner"> 
                   <div>
-                  	<h4></h4>
+                    <h4></h4>
                     <ul>
                       <li><a href="inf_upravlenie_pitaniem.html">Управление питанием </a></li>
                       <li><a href="#">Дискретные полупроводниковые устройства</a></li>
@@ -120,6 +94,7 @@
       </div>
     </div>
 
+
   <!-- Page Title -->
     <div class="section section-breadcrumbs">
       <div class="container">
@@ -130,15 +105,27 @@
         </div>
       </div>
     </div>
-
+<!--
 <div class="container-fluid">
   <div class="row"> 
   <div class="img-wrap">    
     <div class="pic">
     <img  class="img-responsive" src="img/tgu.jpg" width="100%" style="background-size: cover; background-repeat: repeat-y;"> </a> 
     </div>
- </div>
-</div>        
+ </div>-->
+
+     <div class="container4 d" style="margin-top: -10px;">
+      <br>
+      <h1 style=" color: #F0FFF0 ; text-align: center; font-size: 60px;">Что такое "Умный дом"?</h1>
+      <div style="height: 50%; width: 100%; background-color: rgba(245, 245, 245, .8); " >
+      <div class = "text" style=" width: 850px; margin-right: 4%; text-align: center;">
+      Под «умным» домом следует понимать систему, которая обеспечивает безопасность, ресурсосбережение, а также комфортное времяпрепровождение для всех пользователей. Можете ли вы представить как место, в котором вы проводите большую часть дня, или место, в котором вы можете отдохнуть, помогают экономить ваше время? Например, дом сможет разбудить вас с утра, позаботиться о завтраке и помочь со сборами на работу. Защитит жильё, пока вы будете вне его. В это же время вы сможете получать важную информацию о нём и управлять системой дистанционно. 
+      <br>«Умный дом» сможет незаметно влиться в вашу жизнь, наблюдая за ней.
+    </div>
+    </div>
+    </div>
+ 
+  </div>        
 </div>
 
         <!-- Javascripts -->
